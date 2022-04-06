@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <title>Security Logs</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="alt.ico" />
+  <script src="scripts/fuckery.js"></script>
+  <script>
+    const fuck = (invert)=>{
+      const site1 = document.querySelector("#site1").value;
+      const site2 = document.querySelector("#site2").value;
+      if(invert){
+        breed(site2,site1);
+      }else{
+        breed(site1,site2);
+
+      }
+
+    }
+  </script>
+
+  
+</head>
+
+<body>
+  <div id = "input">
+    <div><label>First Site:</label><input id="site1" style="width:400px" value="http://farragofiction.com/NagaGirlfriend/"></input></div>
+    <div><label>Second Site:</label><input id="site2" style="width:400px" value="http://farragofiction.com/ATranscript/"></input></div>
+
+    <button onclick="fuck(false);">Breed 1 With 2</button>
+    <button onclick="fuck(true);">Breed 2 With 1</button>
+
+    </div>
+  <div id ="cradle">
+      <p>Note, this will not work for all sites, or even most sites (cuz it requires cross session scripting which is a stupidly bad idea). But it works for some and it amuses me so damn much. Based on a google auto correct gone wrong IC got.</p>
+      <p>Note: Breeding is ADDITIVE</p>
+  </div>
+
+</body>
+
+</html>
